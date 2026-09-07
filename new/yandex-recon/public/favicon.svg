@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="url(#grad)"/>
+  <rect width="32" height="32" rx="8" fill="url(#grid)" opacity="0.15"/>
+  <circle cx="16" cy="16" r="9" stroke="rgba(255,180,180,0.85)" stroke-width="1.5" fill="none"/>
+  <circle cx="16" cy="16" r="4" stroke="rgba(255,180,180,0.6)" stroke-width="1" fill="none"/>
+  <circle cx="16" cy="16" r="1.5" fill="white" opacity="0.9"/>
+  <line x1="16" y1="3" x2="16" y2="7" stroke="rgba(255,150,150,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="16" y1="25" x2="16" y2="29" stroke="rgba(255,150,150,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="3" y1="16" x2="7" y2="16" stroke="rgba(255,150,150,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="25" y1="16" x2="29" y2="16" stroke="rgba(255,150,150,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="32" y2="32">
+      <stop offset="0%" stop-color="#7f1d1d"/>
+      <stop offset="50%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+    <pattern id="grid" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M 4 0 L 0 0 0 4" fill="none" stroke="white" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+</svg>
