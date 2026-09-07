@@ -12,7 +12,6 @@ export function Header() {
           <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-red-600 via-red-700 to-red-900 flex items-center justify-center shadow-lg shadow-red-900/40 border border-red-500/20">
             <Crosshair size={21} className="text-red-100 icon-glow" strokeWidth={2.5} />
           </div>
-          {/* Outer red glow ring */}
           <div className="absolute inset-0 rounded-xl bg-red-600/30 blur-lg -z-10" />
         </div>
 
@@ -50,22 +49,22 @@ export function Header() {
       <div className="flex items-center justify-center gap-2 mb-5">
         <Terminal size={13} className="text-red-600/50" />
         <span className="font-mono text-xs text-red-600/40 tracking-widest">
-          for osint &amp; bug bounty
+          for osint &amp; security research
         </span>
       </div>
 
       {/* Main heading */}
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-5 leading-tight">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4 leading-tight">
         <span className="gradient-text">Yandex dork</span>{' '}
-        <span className="text-white/90">queries</span>
+        <span className="text-white/90">queries for recon,</span>
         <br className="hidden sm:block" />
-        <span className="text-white/90"> for recon, OSINT &amp; bug bounty.</span>
+        <span className="text-white/90">OSINT &amp; security research.</span>
       </h1>
 
-      {/* Description */}
-      <p className="text-sm sm:text-base text-white/40 max-w-2xl mx-auto leading-relaxed mb-5">
-        Generate Yandex search queries for authorized reconnaissance, OSINT, asset discovery,
-        exposed files, indexed directories and administrative interfaces.
+      {/* Sub-headline */}
+      <p className="text-sm sm:text-base text-white/45 max-w-2xl mx-auto leading-relaxed mb-5">
+        Generate targeted Yandex queries for authorized asset discovery, exposed files,
+        indexed directories, public resources, and administrative interfaces.
         Uses operators:{' '}
         {['site:', 'host:', 'rhost:', 'url:', 'mime:', 'ext:'].map((op) => (
           <code
