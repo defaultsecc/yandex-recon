@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 250" width="860" height="250" role="img" aria-label="YandexRecon">
+  <defs>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2A2A"/>
+      <stop offset="0.55" stop-color="#D3122B"/>
+      <stop offset="1" stop-color="#C4162A"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5a1019"/>
+      <stop offset="1" stop-color="#1e0609"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2A2A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FF2A2A" stop-opacity="0.55"/>
+    </linearGradient>
+    <clipPath id="lensClip"><circle cx="755" cy="112" r="50"/></clipPath>
+  </defs>
+
+  <!-- operator tag -->
+  <text x="32" y="52" font-family="'JetBrains Mono','Fira Code',Consolas,monospace" font-size="15" font-weight="600"
+        letter-spacing="3" fill="#8A8F98">// DEFAULTSEC · RED TEAM</text>
+
+  <!-- wordmark -->
+  <text x="30" y="145" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="82" font-weight="800"
+        fill="url(#word)" textLength="620" lengthAdjust="spacingAndGlyphs">YandexRecon</text>
+
+  <!-- scope: crosshair ticks outside ring -->
+  <g stroke="#D3122B" stroke-width="6" stroke-linecap="round">
+    <line x1="755" y1="40" x2="755" y2="52"/>
+    <line x1="755" y1="172" x2="755" y2="184"/>
+    <line x1="683" y1="112" x2="695" y2="112"/>
+    <line x1="815" y1="112" x2="827" y2="112"/>
+  </g>
+
+  <!-- scope: ring + lens -->
+  <circle cx="755" cy="112" r="56" fill="url(#lens)" stroke="url(#word)" stroke-width="10"/>
+
+  <g clip-path="url(#lensClip)">
+    <!-- range rings -->
+    <circle cx="755" cy="112" r="34" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <circle cx="755" cy="112" r="17" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <!-- inner crosshair -->
+    <line x1="705" y1="112" x2="805" y2="112" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.5"/>
+    <line x1="755" y1="62" x2="755" y2="162" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.5"/>
+    <!-- radar sweep -->
+    <path d="M755 112 L755 62 A50 50 0 0 1 798.3 87 Z" fill="url(#sweep)"/>
+    <line x1="755" y1="112" x2="798.3" y2="87" stroke="#FF8A7A" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- target blips -->
+  <circle cx="778" cy="84" r="5" fill="#FF8A7A"/>
+  <circle cx="778" cy="84" r="10" fill="none" stroke="#FF8A7A" stroke-opacity="0.45" stroke-width="2"/>
+  <circle cx="731" cy="131" r="3.5" fill="#FF2A2A" fill-opacity="0.75"/>
+  <circle cx="779" cy="138" r="2.5" fill="#FF2A2A" fill-opacity="0.5"/>
+  <circle cx="755" cy="112" r="3.5" fill="#ffffff" fill-opacity="0.9"/>
+
+  <!-- divider + tagline -->
+  <line x1="30" y1="200" x2="830" y2="200" stroke="#D3122B" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="430" y="230" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+        font-size="17" font-weight="600" letter-spacing="4" fill="#8A8F98">YANDEX DORK RECON &amp; OSINT QUERY GENERATOR</text>
+</svg>
